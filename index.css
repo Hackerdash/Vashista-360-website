@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html{
+    scroll-behavior: smooth;;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+body {
+    background-image: url(./images/Untitled\ design.png);
+    background-Size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    display: flex;
+
+
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.left img {
+    height: 50px;
+}
+
+.center {
+    display: flex;
+    
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1em;
+
+}
+
+.center a {
+    position: relative;
+    cursor: pointer;
+    color: #000;
+
+}
+
+.center a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(199, 57, 57);
+    height: 2px;
+    width: 0;
+    bottom: -0.4em;
+    left: 0%;
+    transition: 0.3s all ease;
+}
+
+
+
+.center a:hover::after {
+    color: #000;
+    width: 100%;
+}
+
+.center a.active::after {
+    color: #000;
+    width: 100%;
+}
+
+.right button {
+    background: rgb(218, 177, 42);
+    border: 1px solid rgb(218, 177, 42);
+    padding: 7px 30px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.right button:hover {
+    background-color: #fff;
+    color: #00bfa6;
+    font-weight: 500;
+}
+
+
+.container1 {
+
+    padding: 0 0 2em;
+}
+
+.container1::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+.container1::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.container1::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.container1::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.heading {
+    margin-left: -35%;
+    font-weight: 600;
+    font-size: 4em;
+}
+
+
+.body {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -12%;
+}
+
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -12%;
+}
+
+.discription {
+    margin-left: 10%;
+    margin-right: 60%;
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+
+.image img {
+    margin-top: -25%;
+    margin-left: 40%;
+    height: 60vh;
+    opacity: .8;
+}
+
+.content button {
+    margin-top: 1.5em;
+    background-color: #00bfa6;
+    padding: 10px 45px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.KnowMore button {
+    background: rgb(218, 177, 42);
+    border: 1px solid rgb(218, 177, 42);
+    padding: 7px 30px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    margin-left: 20%;
+
+}
+
+.KnowMore button:hover {
+    background-color: #fff;
+    color: #00bfa6;
+    font-weight: 500;
+}
+
+.teaching {
+    height: 50vh;
+    margin: 20% 5% 10% 10%;
+}
+
+.teachingh1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: -550px;
+    margin-left: 50%;
+}
+
+.teachingp {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 50%;
+    margin-right: 3%;
+}
+
+
+
+
+.rectangle {
+    height: 95vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.tutorlogo {
+    height: 60vh;
+    margin-top: 10px;
+    margin-left: -10%;
+}
+
+.container3 {
+    margin-top: -85vh;
+    margin-right: 52vw;
+}
+
+.tutor1 {
+    font-size: 7vh;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.tutor {
+    font-size: 3vh;
+    padding-top: 3%;
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+.OurBooks {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-left: 35%;
+}
+.box{
+    margin-left: 10%;
+    display: flex;
+    height: 400px;
+    align-items: center;
+    overflow: hidden;
+ 
+}
+.card1{
+    margin-left: 20px;
+    height: auto;
+    width: auto;
+}
+.buy {
+    overflow: hidden;
+}.buy img{
+    margin-left: 30px;
+}
+
+
+ .BookImagel {
+    height: 300px;
+    margin-top: 6%;
+    margin-left: 15%;
+    
+}
+
+.BookImager {
+    height: 300px;
+    margin-top: 6%;
+    margin-left: 15%;
+    
+}
+
+.amazon{
+    height: 8vh;
+}
+
+.flipkart{
+    height: 8vh;
+}
+
+
+.random {
+    background-image: url(./images/lastpage.png);
+    background-Size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 203vh;
+    margin-top: 10%;
+}
+
+.randomText {
+    padding-top: 30px;
+    margin-left: 24%;
+    font-size: 7vh;
+    font-weight: 600;
+    color: #fff;
+}
+.about{
+    margin-top: -35%;
+}
+.support {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 6%;
+    margin-left: 37%;
+    color: #000;
+}
+
+.phone {
+    font-weight: 500;
+    font-size: 30px;
+    margin-left: 40vw;
+    color: #000;
+}
+
+
+.address {
+    margin-left: 43%;
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
+}
+
+.address1 {
+    margin-left: 43%;
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
+}
+
+
+.images {
+    margin-left: 10px;
+    margin-top: 26%;
+    height: 50px;
+}
+
+.social{
+    text-align: center;
+}
+
+/*-------------------------Animations-----------------------*/
+
+
+
+
+.teaching{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.teaching.appear{
+    opacity: 1;
+}
+
+.tutorlogo{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.tutorlogo.appear{
+    opacity: 1;
+}
+
+.BookImagel{
+    transform: translateX(-100%);
+}
+
+.BookImager{
+    transform: translateX(100%);
+}
+
+.BookImagel,
+.BookImager{
+    transition: tranform 400ms ease-in;
+}
+
+.BookImagel.appear,
+.BookImager.appear{
+    transform: translateX(0);
+}
+
+.animation1{
+    animation: movedown .5s linear 1;
+    animation-delay: .5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.right{
+    animation: movedown .5s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.center{
+    animation: movedown .5s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.body,
+.body1,
+.discription,
+.KnowMore{
+    animation: moveright .5s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.image{
+    animation: zoomin .5s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards; 
+}
+
+
+
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility:visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility:visible;
+    }
+}
+
+@keyframes movedown{
+    0%{
+        transform:translateY(-100px);
+        visibility:visible;
+    }
+    100%{
+        transform:translateY(0px);
+        visibility:visible;
+    }
+}
+
+@keyframes moveright{
+    0%{
+        transform:translateX(-100px);
+        visibility:visible;
+    }
+    100%{
+        transform:translateX(0px);
+        visibility:visible;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*------------------------------MOBILE VIEW----------------------------------*/
+
+@media only screen and (max-width: 992px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        color: #000;
+    }
+
+    body {
+        background-image: url("./images/randommobilebg.png");
+        background-Size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .navbar { 
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+
+    .right {
+        margin-top: 1.5em;
+    }
+
+    .image img {
+        display: none;
+    }
+    .center a{
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .center{
+        margin-top: 1em;
+        margin-right: 22px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .heading {
+        margin-left: 8vw;
+        font-weight: 600;
+        font-size: 4vh;
+        color: #fff;
+    }
+
+    .body {
+        margin-top: 10vh;
+    }
+
+    .discription {
+        color: #fff;
+        margin-left: 3%;
+        margin-right: 13%;
+        margin-top: 10%;
+        font-size: 3vh;
+        font-weight: 400;
+    }
+
+    .KnowMore {
+        margin-left: 10px;
+
+    }
+    
+    .teaching {
+        height: 20vh;
+        margin-left: 25vw;
+        margin-top: 40vh;
+        margin-bottom: 600px;
+    }
+
+    .teachingh1 {
+        font-size: 25px;
+        margin-left: 25%;
+    }
+
+    .teachingp {
+        font-size: 2vh;
+        margin-left: 25px;
+        margin-right: 3%;
+        margin-bottom: 30%;
+    }
+
+    
+    .container3 {
+        margin-right: 0px;
+    }
+
+    .rectangle {
+        height: 55vh;
+        width: 100vw;
+        margin-top: 150px;
+    }
+
+    .tutorlogo {
+        height: 150px;
+        width: 170px;
+        margin-top: -140vh;
+        margin-left: 27%;
+    }
+
+    .tutor1 {
+        margin-top: 25vh;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .tutor {
+        font-size: 2vh;
+        margin-right: 3%;
+        font-weight: 400;
+    }
+    .OurBooks{
+        margin-left: 20%;
+        font-size: revert;
+    }
+.box{
+    display: inline;
+}
+    .buy a{
+        display: inline-block;
+    }
+
+
+    .random {
+        background-image: url(./images/mobilerandom.png);
+        background-Size: 100% 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        width: 100%;
+    }
+
+    .randomText {
+        
+        margin-left: 10vw;
+        font-size: 2.5vh;
+        font-weight: 900;
+        color: #fff;
+    }
+    .about{
+        margin-top: -100%;
+    }
+
+    .support {
+        font-weight: 800;
+        font-size: 2.3vh;
+        margin-left: 22%;
+        color: #000;
+    }
+
+    .phone {
+        font-weight: 700;
+        font-size: 2.2vh;
+        margin-left: 27%;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .address {
+        margin-left: 30%;
+        font-weight: 600;
+        font-size: 15px;
+        color: #000;
+    }
+    .address1 {
+        margin-left: 30%;
+        font-weight: 600;
+        font-size: 15px;
+        color: #000;
+    }
+    .social{
+        margin-left: 20%;
+    }
+    .images {
+        height: 26px;
+    }
+
+
+    
+}
+
